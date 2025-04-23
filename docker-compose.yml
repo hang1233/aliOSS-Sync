@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  oss-sync-tool:
+    build: .
+    container_name: oss-sync-tool
+    restart: always
+    ports:
+      - "2003:2003"
+    volumes:
+      - ./data:/app/data
+      - ${HOST_PATH}:/host_files
+    environment:
+      - OSS_ACCESS_KEY_ID=${OSS_ACCESS_KEY_ID}
+      - OSS_ACCESS_KEY_SECRET=${OSS_ACCESS_KEY_SECRET}
+      - OSS_BUCKET=${OSS_BUCKET}
+      - OSS_ENDPOINT=${OSS_ENDPOINT}
+      - TZ=Asia/Shanghai 
