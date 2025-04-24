@@ -2,7 +2,7 @@
 
 一个用于同步本地文件到阿里云OSS的现代化网页应用。通过简单易用的UI界面，轻松管理和监控文件同步进度，支持增量同步和忽略重复文件。
 
-![OSS同步工具截图](screenshots/dashboard.png)
+![OSS同步工具控制面板](screenshots/dashboard.png)
 
 ## 功能特点
 
